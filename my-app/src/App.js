@@ -12,7 +12,7 @@ class App extends React.Component{
 
     fetch = async () => {
         const res = await fetch('https://jsonplaceholder.typicode.com/posts');
-        const data = await res.json();
+        const data =  await res.json();
         this.setState({posts: data});
     }
 
